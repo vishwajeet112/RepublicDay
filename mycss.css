@@ -1,0 +1,245 @@
+.ground{  
+    background-image: linear-gradient(white 50%, #eee);  
+    padding-bottom: 600px;  
+}  
+.flag.rect{  
+    position: absolute;  
+    display: inline-block;  
+    box-sizing: border-box;  
+    margin: 2em 3em 120px;  
+    width: 500px;  
+    height: 150px;  
+    border: 1px solid #bbb;  
+     box-shadow: 2px 5px 14px 0px rgba(0,0,0,0.4);  
+    -webkit-backface-visibility:hidden;  
+    -webkit-prespctive:1000;  
+    -webkit-transform-origin:0 250px;  
+    -webkit-transform-style:preserve3d;  
+    -webkit-animation-name:wave;  
+    -webkit-animation-duration:8s;  
+    -webkit-animation-timing-function:cubic-bezier(0.16,0.14,0.82,0.73);  
+    -webkit-animation-timing-function:linear;  
+    webkit-animation-iteration-count:infinite;  
+}  
+.flag.rect{  
+    margin-left: 300px;  
+    width: 200px;  
+}  
+.flag:before{  
+    position: absolute;  
+    content: " ";  
+    height: 470px;  
+    left: -15px;  
+    top: -3px;  
+    width: 15px;  
+    border-radius: 1px solid white;  
+    border-radius: 3px;  
+    background-color: #444;  
+    box-shadow: -3px 3px 8px 0px rgba(0,0,0,0.4);  
+    transform: rotate(0deg);  
+}  
+.box-1{  
+    position: absolute;  
+    top: 77.5%;  
+    left: 27%;  
+    width: 60px;  
+    height: 26px;  
+    background: #444;  
+}  
+.box-2{  
+    position: absolute;top: 81.5%;  
+    left: 25%;  
+    height: 35px;  
+    width: 100px;  
+    background: #444;  
+    border-radius: 3px;  
+}  
+.flag-pattern{  
+    position: absolute;  
+    width: 100%;  
+    height: 100%;  
+    box-sizing: border-box;  
+    -webkit-reflect:below 6px;  
+    -webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(70%,transparent),to(rgba(255,255,255,0.5)));  
+}  
+.flag-pattern.ind{  
+    background-color: orange;  
+    background-image: linear-gradient(green 33.3%, transparent 33.3%),  
+    linear-gradient(white 66.6%, transparent 66.6%);  
+}  
+.flag-wave {  
+position: absolute;  
+top: 0;  
+left: 0;  
+width: 100%;  
+height: 100%;  
+background-image: -webkit-gradient(linear, 0 -25%, 100% top, color-stop(0%, rgba(255, 255, 255, 0)),   
+     color-stop(20%, rgba(255, 255, 255, 0)),  
+      color-stop(30%, rgba(0, 0, 0, 0.04)),   
+      color-stop(40%, rgba(255, 255, 255, 0.2)),   
+      color-stop(60%, rgba(255, 255, 255, 0)),   
+      color-stop(65%, rgba(255, 255, 255, 0.2)),   
+      color-stop(80%, rgba(0, 0, 0, 0.05)),   
+      color-stop(100%, rgba(255, 255, 255, 0)));  
+background-size: 200%;  
+-webkit-animation-name: flutter;  
+-webkit-animation-duration: 8s;  
+-webkit-animation-timing-function: cubic-bezier(0.16, 0.14, 0.82, 0.73);  
+-webkit-animation-iteration-count: infinite;  
+}  
+.circle{  
+    position: absolute;  
+    top: 36%;  
+    left: 35%;  
+    width: 36px;  
+    height: 36px;  
+    border:2px solid #231BBF;  
+    border-radius: 50%;  
+    animation:bar-animate 5s linear infinite;  
+    }  
+    .circle:after{  
+         content: " ";  
+         position: absolute;  
+         top: 42%;  
+         left: 42%;  
+         width: 4px;  
+         height: 4px;  
+         border-radius: 50%;  
+         background: #231BBF;  
+    }  
+    .bar{  
+         position: absolute;  
+         left: 16px;  
+         display: inline-block;  
+         height: 36px;  
+         width: 2px;  
+         background: #231BBF;  
+    }  
+    .bar:nth-child(1){  
+         transform:rotate(15deg);  
+    }  
+         .bar:nth-child(2){  
+         transform:rotate(30deg);  
+    }  
+         .bar:nth-child(3){  
+         transform:rotate(45deg);  
+    }  
+         .bar:nth-child(4){  
+         transform:rotate(60deg);  
+    }  
+         .bar:nth-child(5){  
+         transform:rotate(75deg);  
+    }  
+         .bar:nth-child(6){  
+         transform:rotate(90deg);  
+    }  
+         .bar:nth-child(7){  
+         transform:rotate(105deg);  
+    }  
+         .bar:nth-child(8){  
+         transform:rotate(120deg);  
+    }  
+         .bar:nth-child(9){  
+         transform:rotate(135deg);  
+    }  
+         .bar:nth-child(10){  
+         transform:rotate(150deg);  
+    }  
+         .bar:nth-child(11){  
+         transform:rotate(165deg);  
+    }  
+         .bar:nth-child(12){  
+         transform:rotate(180deg);  
+    }  
+    @keyframes bar-animate{  
+         0%{  
+              transform: rotate(0deg);  
+         }  
+         100%{  
+              transform: rotate(360deg);  
+         }  
+    }  
+    @-webkit-keyframes flutter{  
+         0%{  
+              background-position: -400% 0px;  
+         }  
+         30%{  
+              background-position: -200% 5px;  
+         }  
+         70%{  
+              background-position: 200% -5px;  
+         }  
+         100%{  
+              background-position: 400% 0px;  
+         }  
+    }  
+    @-webkit-keyframes wave{  
+         0%{  
+              box-shadow:4px 5px 5px 0 rgba(0,0,0,0.1);  
+              -webkit-transform:translate3d(0,0,0);  
+         }  
+         20%{  
+              box-shadow:4px 5px 45px 0 rgba(0,0,0,0.1);  
+              -webkit-transform:translate3d(0,0,0);  
+         }  
+         40%{  
+              box-shadow:4px 5px 20px 0 rgba(0,0,0,0.4);  
+              -webkit-transform:translate3d(0,0,0);  
+         }  
+         60%{  
+              box-shadow:4px 5px 5px 0 rgba(0,0,0,0.1);  
+              -webkit-transform:translate3d(0,0,0);  
+         }  
+         80%{  
+              box-shadow:4px 5px 45px 0 rgba(0,0,0,0.1);  
+              -webkit-transform:translate3d(0,0,0);  
+         }  
+         100%{  
+              box-shadow:4px 5px 5px 0 rgba(0,0,0,0.1);  
+              -webkit-transform:translate3d(0,0,0);  
+         }  
+    }  
+
+
+
+
+
+
+    /*
+    body{
+        background-color: #111;
+        font-family: Signika Negative, Asap, sans-serif;
+        color:white;
+        overflow:hidden;
+      }
+      .dot{
+        width:35px;
+        height:35px;
+        position:absolute;
+        background: url(http://img.babathe.com/upload/specialDisplay/htmlImage/2019/20190104_rose2.png);
+        background-size: 100% 100%;
+      }
+      .dot2{
+        width:35px;
+        height:35px;
+        position:absolute;
+        background: url(http://img.babathe.com/upload/specialDisplay/htmlImage/2019/20190104_rose.png);
+        background-size: 100% 100%;
+      }
+      .dot3{
+        width:35px;
+        height:35px;
+        position:absolute;
+        background: url(http://img.babathe.com/upload/specialDisplay/htmlImage/2019/20190104_rose3.png);
+        background-size: 100% 100%;
+      }
+      html, body, #container {width:100%; height:100%; }
+      #logo{ left:50%; top:50%; position:absolute; border-radius:10px; }
+      
+      
+      
+      #DiacoDesignLink,#pens{
+        color: #fff;
+      }
+      */
+      
